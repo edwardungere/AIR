@@ -18,7 +18,7 @@ Name: **Public-1A**
 
 Availability Zone: **us-east-1a**
 
-IPv4 CIDR Block: **10.0.0.1/24**
+IPv4 CIDR Block: **10.0.1.0/24**
 
 Enable auto-assign public IPv4 addresses
 
@@ -28,7 +28,7 @@ Name: **Private-1A**
 
 Availability Zone: **us-east-1a**
 
-IPv4 CIDR Block: **10.0.0.2/24**
+IPv4 CIDR Block: **10.0.2.0/24**
 
 # Create private route table
 
