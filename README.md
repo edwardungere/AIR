@@ -8,7 +8,7 @@ The scenario models a previously compromised a cloud workload operating within t
 
 Activity will generate telemetry across AWS API logs, VPC network flow metadata, and host-based Linux logs. The sources are ingested into Splunk SIEM, where they are normalized, correlated, and analyzed to detect malicious behavior and trigger automated response actions.
 
-<img src="AWS-Splunk-Image.png" width="300" height="300" />
+<img src="aws-splunk.png" width="300" height="300" />
 
 ### Core components 
 - Amazon Web Services CLI
