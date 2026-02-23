@@ -10,14 +10,3 @@ Activity from the attacker will generate telemetry across AWS API logs, VPC netw
 
 <img src="aws-splunk.png" width="300" height="300" />
 
-### Core components 
-- Amazon Web Services CLI
-- Amazon VPC
-- VPC Flow Logs 
--	Amazon EC2 
--	AWS CloudTrail
--	S3
--	Amazon CloudWatch
--	Splunk 
--	AWS Lambda
--	Ubuntu
