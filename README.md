@@ -4,9 +4,9 @@ The Atuomated Ingestion Response lab demonstrates a full cloud security monitori
 
 Instead of relying on a single telemetry source to respond to threats, the lab shows how logs across the control and data plane can be correlated to provide visibility into adversary tactics and techniques and enable effective, automated mitigation.
 
-The scenario models a previously compromised a cloud workload operating within the same AWS account as the victim instance; a common real-world initial access scenario. The attacker will conduct MITRE-aligned techniques against a Linu EC2 instance. 
+This scenario models an external machine launching MITRE-mapped attacks against an internet-facing cloud workload operating within the same AWS account as a private instance and Splunk instance. The attacker will will move laterally from the internet-facing instace to the private instance. 
 
-Activity will generate telemetry across AWS API logs, VPC network flow metadata, and host-based Linux logs. The sources are ingested into Splunk SIEM, where they are normalized, correlated, and analyzed to detect malicious behavior and trigger automated response actions.
+Activity from the attacker will generate telemetry across AWS API logs, VPC network flow metadata, and host-based Linux logs. These sources are ingested into the Splunk SIEM, where they are normalized, correlated, and analyzed to detect malicious behavior and trigger automated response actions via Lambda Functions.
 
 <img src="aws-splunk.png" width="300" height="300" />
 
