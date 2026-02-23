@@ -2,7 +2,7 @@
 
 The Atuomated Ingestion Response lab demonstrates a full cloud security monitoring and automated incident response pipline using **AWS** and **Splunk**. 
 
-Instead of relying on a single telemetry source to respond to threats, the lab shows how logs across the control and data plane can be correlated to provide visibility into adversary tactics and techniques and enable effective, automated mitigation.
+Instead of relying on a single telemetry source to respond to threats, the lab shows how logs across the control and data plane can be correlated to provide expanded visibility into adversary tactics and techniques and enable effective, automated mitigation.
 
 This scenario models an external machine launching MITRE-mapped attacks against an internet-facing cloud workload operating within the same AWS account as a private instance and Splunk instance. The attacker will will move laterally from the internet-facing instace to the private instance. 
 
