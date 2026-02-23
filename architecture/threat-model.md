@@ -29,22 +29,36 @@
 
 ## 2. Security Objectives 
 
-### 2.1 (STRIDE)
+### 2.1 STRIDE
 #### Spoofing:
-- Initial compromise of public EC2
-- Lateral movement between public and private instances
-- IAM privilege escalation
-- Persistence mechanisms
+- SSH login via stolen credentials
+- Assuming IAM role with stolen credentials
+- Using instance metadata to retrieve IAM role credentials
 #### Tampering:
-
+- System file deletion or modification on instances
+- Changing role security group or NACL rules
+- Altering configuration of CloudTrail
+- Modifying IAM policies
+- Modifyng log objects in S3
 #### Repudiation:
-
+- Deleting logs 
+- Disabling logging
+- Clearing shell history
+- Deleting log objects in S3
 #### Information Disclosure:
-
+- Accessing S3 buckets without authorization
+- Reading EC2 instance metadata credentials
+- Exfiltrating logs
 #### Denial of Service:
-
-#### Eleveation of Privilege:
-
+- Exhuasting system resources via traffic flooding
+- Intentionally misconfigured security group causing lockout
+- Deleting or stopping EC2 instances
+#### Elevation of Privilege:
+- Creating IAM users with admin priveleges
+- Exploiting overly permissive IAM policies
+- Adding unauthorized users to sudoers group
+- Adding IAM policy to compromised role
+  
 ### 2.2 Out of Scope
 - Physical access
 - Zero-day kernel exploits
