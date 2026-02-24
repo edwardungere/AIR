@@ -6,11 +6,9 @@ IPv4 CIDR Block: **10.0.0.0/16**
 
 Optional: Enable DNS hostnames
 
-`aws ec2 create-vpc --instance-tenancy 'default' --cidr-block '10.0.0.0/16' --tag-specifications '{"resourceType":"vpc","tags":[{"key":"Name","value":"MyVPC"}]}'` 
-
 # Create Subnets
 
-## Public Subnet
+### Public Subnet
 
 Select: **MyVPC**
 
@@ -22,13 +20,19 @@ IPv4 CIDR Block: **10.0.1.0/24**
 
 Enable auto-assign public IPv4 addresses
 
-## Private Subnet
+### Private Subnets
 
-Name: **Private-1A**
+Name: **Private-1B**
 
-Availability Zone: **us-east-1a**
+Availability Zone: **us-east-1b**
 
 IPv4 CIDR Block: **10.0.2.0/24**
+
+Name: **Private-2B**
+
+Availability Zone: **us-east-1b**
+
+IPv4 CIDR Block: **10.0.3.0/24**
 
 # Create private route table
 
@@ -36,7 +40,7 @@ Name: **Private-RT**
 
 VPC: **MyVPC**
 
-Subnet associations: **Private-1A**
+Subnet associations: **Private-1B**, **Private-2B**
 
 
 
