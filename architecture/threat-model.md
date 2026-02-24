@@ -48,7 +48,7 @@
 #### Information Disclosure:
 - Accessing S3 buckets without authorization
 - Reading EC2 instance metadata credentials
-- Exfiltrating logs
+- Exfiltrating logs and data
 #### Denial of Service:
 - Exhuasting system resources via traffic flooding
 - Intentionally misconfigured security group causing lockout
