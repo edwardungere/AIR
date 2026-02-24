@@ -18,7 +18,7 @@
 - Splunk assumes an IAM role and periodically pulls these logs and sends generated alerts to Amazon API gateway, which then invokes Lambda functions to execute automated mitigation.
 
 ### 1.2 Data Flow Diagram
-![dfd](data-flow-diagram.drawio.png)
+![dfd](dfd.png)
 
 #### 1.2.1 Untrused zones
 - Internet
