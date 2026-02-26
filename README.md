@@ -31,7 +31,7 @@ The network is intentionally designed as an internal cloud enviroment with no di
 
 ### 5. Threat Model
 
-The threat model can be found here: [threat model](https://github.com/edwardungere/AIR/architecture/threat-model.md)
+The threat model can be found here: [threat model](https://github.com/edwardungere/AIR/blob/main/architecture/threat-model.md)
 
 	•	3.3 IAM Model
 	•	3.4 Logging Flow
