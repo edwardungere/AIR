@@ -1,26 +1,22 @@
 # Virtual Private Cloud (VPC)
 
-AWS creates default vpc's in every region and a default public subnet in every AZ
+AWS creates a default VPC in every region and a default public subnet in every availability zone (AZ)
+- Virtual private cloud (VPC)
+- Logically isolated cloud within AWS
+- Spans across AZ not regions
+- Multiple can exist within a region at once
+- Each VPC has a block of addresses
 
-- virtual private cloud [vpc]
-- logically isolated cloud within AWS
-- stays within one region, does not span across regions, does span every availability zone [AZ] within a region
-- multiple can stay within a region
-- each vpc has a block of addresses
+# Subnets
+- Smaller networks within a VPC
+- By default, all subnets within the same vpc can talk to each other
+- Each vpc has one virtual router managed by AWS. Route tables are then configured and attached to a subnet
 
-by default, all subnets within a vpc can talk to each other,
-they cannot if: 
-- They are in different VPCs (without VPC Peering / Transit Gateway)
-- NACLs explicitly deny traffic
-- Security Groups block inbound traffic
-
-each vpc has one virtual router, managed by AWS. route tables are configured and attached to vpcs
-
-other definitions
-- peering: direct connection between two vpc's
-- vpc endpoint: private ip connection to public AWS resources
-- NAT instance vs NAT gateway: allows private instances internet access managed by you vs AWS
-- virtual private gateway [vgw] & customer gateway: allow for VPN connection from private network over the internet
-- direct connect: private connection to on-premise without internet connection
-- network ACL: subnet-level firewall
-- security group: instance-level firewall
+## Other definitions
+- VPC Peering: Direct connection between two vpc's
+- VPC Endpoint: Private ip connection to public AWS resources
+- NAT Instance vs NAT Gateway: Allows private instances internet access. Managed by you vs AWS
+- Virtual private gateway & Customer gateway: Allow for VPN connection from private network over the internet
+- Direct connect: Private connection to on-premise without internet connection
+- Network ACL (NACL): Subnet-level firewall
+- Security group: Instance-level firewall
