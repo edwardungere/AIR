@@ -8,7 +8,7 @@ Optional: Enable DNS hostnames
 
 # Create Subnets
 
-### Public Subnet
+### Private Subnets
 
 Select: **MyVPC**
 
@@ -17,8 +17,6 @@ Name: **Private-1A**
 Availability Zone: **us-east-1a**
 
 IPv4 CIDR Block: **10.0.1.0/24**
-
-### Private Subnets
 
 Name: **Private-1B**
 
