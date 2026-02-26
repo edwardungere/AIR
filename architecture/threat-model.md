@@ -1,4 +1,4 @@
-# System Threat Modeling
+# Threat Model
 
 ## 1. Security Objectives, Component Breakdown, and Scope
 
