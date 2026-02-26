@@ -21,7 +21,11 @@ Activity from the attacker will generate telemetry across AWS API logs, VPC netw
 AIR utilizes cloud services that lie on seperate layers of the shared responsibility model. On the IaaS level, EC2 instances are used to represent internal machines and workloads they support. On the SaaS level, AWS CloudWatch and CloudTrail are logging services that enable logging of metadata such as IP data and traffic flow within the VPC to configuration changes and API calls. This means, when paired together, they monitor data across the control and data plane. 
 
 ## 5. Design Decisions
+
+### 5.1 Internet Connectivity
 This lab models a segmented enterprise intranet architecture and reduces the total attack surface by disasbling internet connectivity. By eliminating public ingress and eress traffic, the system isolates internal traffic and lateral movement scenarios and allows focused evaluation of detection and response capatabilities against internal threats. 
+
+### 5.2 Log Collection
 
 ## 6. Threat Model
 The threat model can be found [here](https://github.com/edwardungere/AIR/blob/main/architecture/threat-model.md)
