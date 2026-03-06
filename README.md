@@ -21,7 +21,7 @@ List of services used in this lab:
 
 ### 5.1 VPC Endpoint vs NAT Gateway
 
-This lab models a segmented enterprise intranet architecture and reduces the total attack surface by disasbling internet connectivity. By eliminating public ingress and eress traffic, the system isolates internal traffic and lateral movement scenarios and allows focused evaluation of detection and response capatabilities against internal threats. 
+This lab models a segmented enterprise intranet architecture and reduces the total attack surface by disabling internet connectivity. By eliminating public ingress and egress traffic, the system isolates internal traffic and lateral movement scenarios and allows focused evaluation of detection and response capabilities against internal threats. 
 
 ### 5.2 Pull vs Push Method
 
