@@ -19,13 +19,9 @@ List of services used in this lab:
 
 ## 5. Design Decisions
 
-### 5.1 VPC Endpoint vs NAT Gateway
-
-This lab models a segmented enterprise intranet architecture and reduces the total attack surface by disabling internet connectivity. By eliminating public ingress and egress traffic, the system isolates internal traffic and lateral movement scenarios and allows focused evaluation of detection and response capabilities against internal threats. 
+AIR is structured to represent monitoring across seperate planes in the cloud. On the data plane, VPC flow logs and local logs are used to capture traffic from and within the EC2 instances. On the control plane, CloudTrail logs configuration changes and API calls in AWS. A Splunk Enterprise pulls these logs periodically via Splunk Universal Forwarder, CloudWatch, and S3 and sends alerts to invoke Lambda functions on any malicious activity.
 
 ### 5.2 Pull vs Push Method
-
-AIR is structured to represent monitoring across seperate planes in the cloud. On the data plane, VPC flow logs and local logs are used to capture traffic from and within the EC2 instances. On the control plane, CloudTrail logs configuration changes and API calls in AWS. A Splunk Enterprise pulls these logs periodically via Splunk Universal Forwarder, CloudWatch, and S3 and sends alerts to invoke Lambda functions on any malicious activity.
 
 VPC Flow Logs -> CloudWatch -> Splunk Enterprise <br>
 CloudTrail -> S3 -> Splunk Enterprise <br>
