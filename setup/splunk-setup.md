@@ -18,6 +18,20 @@
 
 > Verify user, should list "ec2-user"
 
+## Initial setup
+
+`sudo dnf update`
+
+> Update list of available packages 
+
+`sudo dnf upgrade`
+
+> Download and install packages
+
+`sudo dnf install wget`
+
+> Install wget tool
+
 ## Setup splunk service
 
 > Navigate to [Splunk Enterprise 10.2.1](https://www.splunk.com/en_us/download/splunk-enterprise.html?locale=en_us)
