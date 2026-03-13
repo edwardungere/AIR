@@ -17,16 +17,6 @@ Activity from the attacker will generate telemetry across AWS API logs, VPC netw
 
 List of services used in this lab:
 
-## 5. Design Decisions
-
-AIR is structured to represent monitoring across seperate planes in the cloud. On the data plane, VPC flow logs and local logs are used to capture traffic from and within the EC2 instances. On the control plane, CloudTrail logs configuration changes and API calls in AWS. A Splunk Enterprise pulls these logs periodically via Splunk Universal Forwarder, CloudWatch, and S3 and sends alerts to invoke Lambda functions on any malicious activity.
-
-### 5.2 Pull vs Push Method
-
-VPC Flow Logs -> CloudWatch -> Splunk Enterprise <br>
-CloudTrail -> S3 -> Splunk Enterprise <br>
-Linux Auditd -> Splunk Universal Forwarder -> Splunk Enterprise
-
 ## 6. Threat Model
 The threat model can be found [here](https://github.com/edwardungere/AIR/blob/main/architecture/threat-model.md)
 
