@@ -1,79 +1,83 @@
 # Splunk setup
 
 ## SSH into instance
+1.  Sets the key file to read-only for the owner, preventing reading, modification or deletion from other users
+ 
+ `chmod 400 "splunk-key.pem"`
 
-`chmod 400 "splunk-key.pem"` 
-
-> Sets the key file to read-only for the owner, preventing reading, modification or deletion from other users
+2. Check permissions of key file
 
 `ls -l /path/to/file`
 
-> Check permissions of key file
+3. SSH into instance using .pem file (make sure instance is running)
 
-`ssh -i /path/to/file username@<public IP of instance>`
+`ssh -i /path/to/file username@<0.0.0.0>`
 
-> SSH into instance using .pem file (make sure instance is running)
+4. Verify user, should list "ec2-user"
 
 `whoami`
 
-> Verify user, should list "ec2-user"
-
 ## Initial setup
+
+1. Update list of available packages
 
 `sudo dnf update`
 
-> Update list of available packages 
+2. Download and install packages
 
 `sudo dnf upgrade`
 
-> Download and install packages
+3. Install wget tool
 
 `sudo dnf install wget`
 
-> Install wget tool
-
 ## Setup splunk service
 
-> Navigate to [Splunk Enterprise 10.2.1](https://www.splunk.com/en_us/download/splunk-enterprise.html?locale=en_us)
+1. Navigate to [Splunk Enterprise 10.2.1](https://www.splunk.com/en_us/download/splunk-enterprise.html?locale=en_us)
 
-> Copy wget link and paste in shell for .rpm installation
+2. Copy wget link and paste in shell for .rpm installation
 
-### OR
+3. Verify .rpm package is downloaded
 
-`wget -O <splunk.rpm> "https://example.com/link/to/package"`
-
- > Run wget command with -O flag and optionally specify package name
-
-`ls`
-
-> Verify .rpm package is downloaded
+  `ls`
 
 ### Installation 
 
-`sudo rpm -i --prefix=/home/ec2-user/logging splunk.rpm`
+1. Install package using rpm
+   
+`sudo rpm -i <package-name.rpm>`
 
-> Install package using rpm and optionally specify location using prefix flag
+2. Verify splunk is installed
 
-`sudo /path/to/splunk/bin/splunk start --run-as-root`
+ `sudo ls /opt/splunk/bin/splunk`
 
-> Run splunk
+3. Accept license agreements and start splunk
 
-`sudo /path/to/splunk/bin/splunk enable boot-start`
+ `sudo -u splunk /opt/splunk/bin/splunk start --accept-license`
 
-> Create script to run Splunk on boot
+4. Create username and password credentials
+   
+6. Stop splunk service
 
-`sudo path/to/splunk/bin/splunk status`
+ `sudo -u splunk /opt/splunk/bin/splunk stop`
 
-> Check Splunk status
+6. Enable boot start with systemctl
+
+ `sudo /opt/splunk/bin/splunk enable boot-start -systemd-managed 1 -user splunk`
+
+7. Start Splunk daemon with systemctl
+
+ `sudo systemctl start Splunkd`
+
+8. Verify Splunkd status
+
+ `sudo systemctl status Splunkd`
+
 
 ## Open Splunk
-> Create a login for Splunk using username: admin and password:
-> SPLUNK-$instance-id$
 
-`https://<public IP address>:8000`
+1. Open your browser and enter the instance's public IP address with port 8000 appended
+ 
+`https://<0.0.0.0>:8000`
 
-> Open your browser and enter the instance's public IP address
-
-> Append port 8000 to the end, this is where Splunk is running
-
-> Enter the same credentials you created within the shell
+2. Login with the same previous credentials
