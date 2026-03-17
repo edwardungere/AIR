@@ -17,7 +17,7 @@ Activity from the attacker will generate telemetry across AWS API logs, VPC netw
 
 List of services used in this lab:
 
-## 6. Threat Model
-The threat model can be found [here](https://github.com/edwardungere/AIR/blob/main/architecture/threat-model.md)
+## 5. Threat Model
+[Threat Model](https://github.com/edwardungere/AIR/blob/main/architecture/threat-model.md)
 
 <img src="aws-splunk.png" width="300" height="300" />
