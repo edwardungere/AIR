@@ -1,14 +1,14 @@
 # Linux logs
 
-auth.log
+### auth.log
 - located in /var/log
 - records authentication-related events
 - (logins, sudo usage, SSH, PAM)
 
-system log (syslog)
+### System log (syslog)
 - records system events
 
-navigation
+### Navigation
 - cat
 - grep
 - tail
