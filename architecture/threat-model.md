@@ -18,7 +18,7 @@
 - The Splunk SIEM assumes an IAM role and periodically pulls these logs and sends generated alerts to Amazon API gateway, which then invokes Lambda functions to execute automated mitigation.
 
 ### 1.2 Data Flow Diagram
-![dfd](dfd1.png)
+![dfd](data-flow-diagram.png)
 
 ## 2. Security Objectives 
 
