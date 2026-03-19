@@ -19,9 +19,9 @@ usermod:
 - `-aG`: add user to group
 - `-d`: Create home directory for user
 - `--move-home`: Move current home directory contents to new home directory
--`-l`: Change user's name
--`-L`: Lokcout user
--`-U`: Unlock user account
+- `-l`: Change user's name
+- `-L`: Lokcout user
+- `-U`: Unlock user account
 
 ## Sudo
 - Need to be in sudo group in order to run sudo command (sudo user)
