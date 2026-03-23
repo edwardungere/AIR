@@ -1,6 +1,10 @@
 # Identity Access Management (IAM) Notes
 
 Controls and guards access to resources within AWS
+IAM policies are granted through
+- User
+- Role
+- Group
 
 Resources are entities created within AWS:
 - EC2 instance
