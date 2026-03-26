@@ -8,6 +8,7 @@ Adversary's goals are:
 
 1. Data exfiltration -  Access and steal confidential data (credentials, records, config files) from the private subnet.
 2. Privilege escalation - Obtain admin privileges on EC2 instances and escalate via AWS IAM to broaden access to cloud resources.
+3. Persistence - Setting up adversary-controlled accounts to maintain persistence within instances and the cloud.
    
 ## Starting position
 
