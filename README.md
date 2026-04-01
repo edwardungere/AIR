@@ -1,12 +1,13 @@
 # Automated Ingestion & Response (AIR) Lab 
 
 ## 1. Introduction
-The Automated Ingestion Response lab demonstrates a full cloud security monitoring and automated incident response pipline using **AWS** and **Splunk**. 
+The Automated Ingestion Response lab demonstrates a full cloud security monitoring and automated incident response pipeline using **AWS** and **Splunk**. 
 
 Instead of relying on a single telemetry source to respond to threats, this lab demonstrates how logs across the control and data plane can be correlated to provide expanded visibility into internal adversary tactics and techniques to enable effective automated mitigation. 
 
 ## 2. Background
-As organizations continue migrating operations to the cloud, these environments have become critical components of enterprise infrastructure. Monitoring these workloads and operations are essential for business continuity and maintaing an important security posture. Comprehensive logging and monitoring across both the control and data plane, paired with sevrless compute functions can provide active defense for these critical enviroments.
+As organizations continue migrating operations to the cloud, these critical operations need to be need to be secured, monitored, and defended with the same rigor applied to traditional on-premises infrastructure. 
+Monitoring these workloads and operations are essential for business continuity and maintaining an important security posture. Comprehensive logging and monitoring across both the control and data plane, paired with serverless compute functions can provide active defense for these critical environments.
 
 ## 3. Scenario
 This scenario models an internal machine launching MITRE-mapped attacks against an internal cloud workload operating within the same AWS account. The attacker will move laterally from its own instace to the private instance. 
