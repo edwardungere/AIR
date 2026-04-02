@@ -12,7 +12,7 @@ useradd:
 - `useradd <username>`: Creates user with username
 - `-g`: Adds user to group
 - `-m`: Creates home directory
-- `s`: Create shell for the user, /bin/bash or /bin/sh for limited shell
+- `-s`: Create shell for the user, /bin/bash or /bin/sh for limited shell
 - `-d`: Takes path for home directory
 
 usermod:
