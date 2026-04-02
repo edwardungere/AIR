@@ -1,23 +1,17 @@
-# MITRE ATT&CK-Mapped Tactics
+# MITRE ATT&CK-Mapped Tactics and Techniques
 
-| Tactic | Description | 
-| ----------- | ----------- | 
-| Reconnaissance | Scanning cloud instances, finding open ports, banner grabbing |
-| Initial Access | Exploiting exposed SSH/FTP services |
-| Execution | Running commands via SSH sessions |
-| Persistence | Adding SSH keys, creating accounts |
-| Privilege Escalation | Abusing misconfigurations/least privelege to gain root |
-| Defense Evasion | Using legitimate tools to avoid detection |
-| Credential Access | Stealing stored credentials, keys |
-| Lateral Movement | SSH from one instance to another |
-| Collection | Gathering files/data of interest |
-| Exfiltration | Transferring data out via FTP, SCP, etc. |
-
-Map each detection to an ATT&CK technique:
-	•	SSH brute-force - T1110
-	•	IAM privilege escalation - T1098
-	•	CloudTrail modification - T1562.008
-	•	Port scanning - T1046
+| Tactic | Description | Technique | Technique ID | Description
+| ----------- | ----------- | ----------- | ----------- | ----------- | 
+| Reconnaissance | Scanning cloud instances, finding open ports, banner grabbing | Active Scanning | T1595 |
+| Initial Access | Exploiting exposed SSH/FTP services | Exploit Public Facing Application | T1190 | 
+| Execution | Running commands via SSH sessions | Command and Scripting Interpreter | T1059 |
+| Persistence | Adding SSH keys, creating accounts | Local Account | T1136.001 |
+| Privilege Escalation | Abusing misconfigurations/least privelege to gain root | Abuse Elevation Control | T1548 |
+| Credential Access | Stealing stored credentials, keys | Unsecured Credentials: Cloud Instance Metadata API | T1552.005 |
+| Discovery | 
+| Lateral Movement | SSH from one instance to another | SSH | T1021.004 |
+| Collection | Gathering files/data of interest | 
+| Exfiltration | Transferring data out via FTP, SCP, etc. | Data from Cloud Storage | T1530 |
 
    
 
