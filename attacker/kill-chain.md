@@ -32,4 +32,4 @@ Exfiltration Attack: Use the AWS CLI to copy files out — either to an attacker
 Splunk detects: Unusual outbound data volume in VPC Flow Logs, or CloudTrail showing PutObject to an external bucket.
 Response: 
 
-<img width="2380" height="2644" alt="image" src="https://github.com/user-attachments/assets/d0fa1568-18b2-4fd3-b936-fd148c314ad3" />
+![attack flow](attack-flow.png)
