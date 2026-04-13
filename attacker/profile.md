@@ -17,6 +17,6 @@ instance, then pivoting into the private subnet containing a database.
 
 ## Tools available
 
-Living-off-the-land only. SSH, FTP, AWS CLI, cURL, cron, find/grep,
+Living-off-the-land only. SSH, AWS CLI, cURL, cron, find/grep,
 and other pre-installed OS/cloud-native utilities.
 
