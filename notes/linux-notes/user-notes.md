@@ -16,12 +16,18 @@ useradd:
 - `-d`: Takes path for home directory
 
 usermod:
-- `-aG`: add user to group
+(use once user is already created)
+- `-aG`: add user to group (a flag is for appending, if left out, will remove user from any groups not specified)
 - `-d`: Create home directory for user
 - `--move-home`: Move current home directory contents to new home directory
 - `-l`: Change user's name
 - `-L`: Lokcout user
 - `-U`: Unlock user account
+
+files:
+- /etc/passwd
+- /etc/group
+- /etc/shadow
 
 ## Sudo
 - Need to be in sudo group in order to run sudo command (sudo user)
