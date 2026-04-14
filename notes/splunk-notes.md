@@ -7,7 +7,7 @@
   - Collects data from remote machines/instances
     
 ### 2. Indexer:
-  - Processes and stores data for quick retrieval
+  - Processes, organizes, and stores data for quick retrieval
   - Creates and manages repositories of data recieved from forwarders
   - Parses, transforms, and indexes for searching
   - Handles search requests from the search head for fast retrieval of data
