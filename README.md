@@ -1,5 +1,6 @@
 # Automated Ingestion & Response (AIR) Lab 
-<img src="architecture/splunk/general-dashboard.pdf"  />
+<img width="2000" height="1526" alt="image" src="https://github.com/user-attachments/assets/36e35177-c903-412f-914e-aa0418ecb873" />
+
 ## 1. Introduction
 The Automated Ingestion Response lab demonstrates a full cloud security monitoring and automated incident response pipeline using **AWS** and **Splunk**. 
 
@@ -40,8 +41,5 @@ Operating Systems
 - Ubuntu 
 
 Frameworks Referenced
-
 - MITRE ATT&CK Enterprise 
 - MITRE ATT&CK Cloud/IaaS 
-
-<img src="aws-splunk.png" width="300" height="300" />
