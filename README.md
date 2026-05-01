@@ -15,10 +15,33 @@ This scenario models an internal machine launching MITRE-mapped attacks against 
 Activity from the attacker will generate telemetry across AWS API logs, VPC network flow metadata, and host-based Linux logs. These sources are ingested into a Splunk instance, where they are normalized, correlated, and analyzed to detect malicious behavior and trigger automated response actions via Lambda Functions.
 
 ## 4. System Architecture
+Computing
+- EC2 
+- EC2 Instance Connect Endpoint
+- IAM 
+- S3
+- Lambda 
 
-List of services used in this lab:
+Networking
+- VPC 
+- NAT Gateway
+- Application Load Balancer 
 
-## 5. Threat Model
-[Threat Model](https://github.com/edwardungere/AIR/blob/main/architecture/threat-model.md)
+Telemetry
+- CloudTrail 
+- SNS
+- SQS 
+- VPC Flow Logs
+- Splunk Enterprise 
+- Splunk Universal Forwarder 
+
+Operating Systems 
+- RHEL 10 
+- Ubuntu 
+
+Frameworks Referenced
+
+- MITRE ATT&CK Enterprise 
+- MITRE ATT&CK Cloud/IaaS 
 
 <img src="aws-splunk.png" width="300" height="300" />
