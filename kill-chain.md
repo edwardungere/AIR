@@ -1,4 +1,4 @@
-# Kill Chain
+# MITRE Kill Chain
 
 **T1595** - Port scanning
 
@@ -15,5 +15,3 @@
 **T1580** - AWS CLI enumeration using stolen credentials
 
 **T1530** - Access and enumerate S3 bucket
-
-![attack flow](attack-flow.png)
