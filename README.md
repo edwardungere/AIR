@@ -1,5 +1,5 @@
 # Automated Ingestion & Response (AIR) Lab 
-<img src="architecture/splunk/general-dashboard.pdf" width="300" height="300" />
+<img src="architecture/splunk/general-dashboard.pdf"  />
 ## 1. Introduction
 The Automated Ingestion Response lab demonstrates a full cloud security monitoring and automated incident response pipeline using **AWS** and **Splunk**. 
 
