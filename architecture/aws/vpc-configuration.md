@@ -4,7 +4,7 @@
 
 ### Admin Access
 
-Admin accesses instances through EIC (EC2 Instance Connect)
+Admin accesses instances through EIC (EC2 Instance Connect) <br>
 This method creates a private tunnel using the EIC endpoint and EIC service
 
 <img src="images/eic-diagram.png" width="500" height="500">
@@ -15,8 +15,7 @@ EIC endpoint creates its own session keys with the remote instance, linux will s
 
 
 ### Internet Access
-Internet access is only available to instances via the NAT gateway
-
+Internet access is only available to instances via the NAT gateway <br>
 Amazon's NAT gateway only allows outbound requests to the internet, and blocks any inboudn intiated requests
 
 <img src="images/vpc-diagram.png" width="500" height="500">
