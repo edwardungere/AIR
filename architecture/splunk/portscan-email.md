@@ -9,12 +9,8 @@ Sends an email everyday at noon, with a list of both external and internal addre
 
 Search: 
 
-`index="aws" sourcetype=aws:vpcflow` 
-
-`| stats dc(dest_prt) as unique_ports count by src_ip, dest_ip`
-
-`| where unique_ports >= 1000`
-
-`| table src_ip, unique_ports, dest_ip`
-
+`index="aws" sourcetype=aws:vpcflow` <br>
+`| stats dc(dest_prt) as unique_ports count by src_ip, dest_ip` <br>
+`| where unique_ports >= 1000` <br>
+`| table src_ip, unique_ports, dest_ip` <br>
 `| sort -unique_ports`
