@@ -1,4 +1,4 @@
-## DET0817	
+## DET0817 (Detection of Scanning IP Blocks)
 **Detection of Scanning IP Blocks**
 
 Monitor the content for unusual activity or active scanning attempts. Try to identify repeated connection attempts, unusual scanning behaviors, or probing activity targeting a single or multiple IP addresses in a network.
