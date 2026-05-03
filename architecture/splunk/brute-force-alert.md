@@ -1,4 +1,4 @@
-# Brute force Email Alert
+## Brute force Email Alert
 
 ### Query: 
 
