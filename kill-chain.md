@@ -1,6 +1,6 @@
 # MITRE Kill Chain
 
-## T1595.001 (
+## T1595.001 (Scanning IP Blocks)
 Attacker confirms services: SSH, HTTP are running on the host machine
 
 **NMAP Command**
