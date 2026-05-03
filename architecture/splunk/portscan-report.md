@@ -7,12 +7,9 @@ Monitor the content for unusual activity or active scanning attempts. Try to ide
 
 ### Associated Search 
 
-`index="aws" sourcetype="aws:vpcflow" NOT src_ip=10.0.* dest_prt=22`
-
-`| stats count by src_ip `
-
-`| where count >=10 `
-
+`index="aws" sourcetype="aws:vpcflow" NOT src_ip=10.0.* dest_prt=22` <br>
+`| stats count by src_ip ` <br>
+`| where count >=10 ` <br>
 `| sort -count`
 
 ### What it does
