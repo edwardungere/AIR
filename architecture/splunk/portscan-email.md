@@ -7,7 +7,7 @@ Sends an email everyday at noon, with a list of both external and internal addre
 <img width="705" height="525" alt="image" src="https://github.com/user-attachments/assets/51e3e085-6b9f-4f71-b14e-86f2e78da995" />
 <br>
 
-Search: 
+### Associated Search: 
 
 `index="aws" sourcetype=aws:vpcflow` <br>
 `| stats dc(dest_prt) as unique_ports count by src_ip, dest_ip` <br>
