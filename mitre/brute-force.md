@@ -1,4 +1,4 @@
-## T1110.001 (Brute froce: Password Guessing)
+## T1110.001 (Brute force: Password Guessing)
 
 Hydra can be used to crack passwords. Specifying the -l and -p will prompt for specific login user and password information.<br>
 Using -L and -P allows you to use a list of usernames and passwords <br>
