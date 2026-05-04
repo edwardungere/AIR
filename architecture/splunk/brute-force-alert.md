@@ -1,5 +1,3 @@
-## DET0551 (Password Guessing via Multi-Source Authentication Failure Correlation)
-
 ## Brute force Email Alert
 
 ### Query: 
