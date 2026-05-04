@@ -8,6 +8,7 @@ By default, Linux systems will not allow ssh into a machine using the root accou
 
 <img width="1764" height="230" alt="image" src="https://github.com/user-attachments/assets/76b57143-dc34-4e69-85d2-d678a2c2b69b" /> <br>
 
-Associated Detection: <a href=../splunk/DET0551/>DET0551</a>
+Associated Detection: <a href=../architecture/splunk/DET0551/>DET0551</a>
 
-Associated Mitigation: 
+Associated Mitigation: <a href=../architecture/splunk/DET0551/brute-force-alert.md>DET0551</a>
+
