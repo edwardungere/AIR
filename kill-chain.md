@@ -1,5 +1,3 @@
-# MITRE Kill Chain
-
 ## T1595.001 (Scanning IP Blocks)
 Attacker confirms services: SSH, HTTP are running on the host machine
 
@@ -8,9 +6,6 @@ Attacker confirms services: SSH, HTTP are running on the host machine
 NMAP -sV (detect services on ports) -p- (all ports) -A (Operating system detection) 
 <img width="830" height="796" alt="Screenshot 2026-04-30 at 10 05 07 AM" src="https://github.com/user-attachments/assets/34af6a4f-5a3c-48f5-aaa6-d4fe4bf3b195" />
 
-
-
-## T1110.001 
 
 ## T1190
 Exposed SSH service
