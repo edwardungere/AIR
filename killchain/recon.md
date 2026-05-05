@@ -10,4 +10,4 @@ NMAP -sV (detect services on ports) -p- (all ports) -A (Operating system detecti
 Associated Detection: <a href="../architecture/splunk/portscan-report.md">DET0817</a>
 
 Associated Mitigation: Cannot be easily mitigated with preventative controls. Focus should be on limit exposed services and data, while
-proactively identifying adversaries and vulnerabilities.
+proactively identifying adversaries and vulnerabilities. <a href="../architecture/splunk/portscan-email.md">M1056</a>
