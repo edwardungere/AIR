@@ -35,7 +35,6 @@ files:
 
 ## Identification
 - `w` or `who` to list all current users and sessions
-- 
 
 ## Groups
 - `groupadd`: create a group
