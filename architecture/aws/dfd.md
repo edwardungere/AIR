@@ -5,5 +5,3 @@ This is followed by SQS queue messages notifying Splunk once new logs have been 
 
 <img src=images/data-flow-diagram.png height="500" width="600">
 
-Other retrieval messages include:
-
