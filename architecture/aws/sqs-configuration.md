@@ -5,7 +5,8 @@ This is followed by SQS queue messages notifying Splunk once new logs have been 
 
 <img src="images/sqs-diagram.png"> <br>
 - When events (objects) are uploaded to S3, SNS is notified. SNS then fans out this feed to SQS subscribers which notify Splunk of the event.
-
+- Errors are saved in Dead Letter Queues.
+  
 This method allows for almost instantaneous arrival of logs to the index. You can optionally configure and specify VPC Interface Endpoints for SQS, STS and S3 services to use private endpoints instead of public endpoints for secure data collection and authentication. 
 
 This method can be used to collect:
