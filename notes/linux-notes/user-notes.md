@@ -33,7 +33,12 @@ files:
 - Need to be in sudo group in order to run sudo command (sudo user)
 - sudoers file
 
+## Identification
+- `w` or `who` to list all current users and sessions
+- 
+
 ## Groups
 - `groupadd`: create a group
-- `groups`: list groups of user
+- `id` to list all groups
+- `groups`: list primary group of user
 - Need to logout for group to take effect
