@@ -24,5 +24,5 @@ Other methods of log retrevial include:
 - Incremental S3
 - SQS
 
-<img width="1442" height="146" alt="image" src="https://github.com/user-attachments/assets/949b24f0-7caf-4e19-ab6f-76e46819b7b5" /> <br>
+<img width="1442" height="146" alt="image" src="https://github.com/user-attachments/assets/949b24f0-7caf-4e19-ab6f-76e46819b7b5" /> 
 - Two inputs made in Splunk to forward logs from S3.
