@@ -21,19 +21,5 @@ Other methods of log retrevial include:
 - Generic S3
 - Incremental S3
 - SQS
-  
-Splunk permissions
-|   S3   |  SQS  |
-|------|-------|
-|  `Get*`  |  `GetQueueAttributes`  |
-|  `List*`  |  `ListQueues`   |
-|  `Delete*`  |  `ReceiveMessage`    |
-|    | `GetQueueUrl`    |
-|    | `DeleteMessage`   |
 
 
-SQS	GetQueueAttributes
-ListQueues
-ReceiveMessage
-GetQueueUrl
-DeleteMessage
