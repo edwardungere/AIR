@@ -1,10 +1,12 @@
 ## Active Scanning Detection (Email)
 
-Sends an email everyday at noon, with a list of both external and internal addresses that attempted an unusual active scan of over 1000 port
+#### What it does
+Sends an email everyday at noon, with a list of both external and internal addresses that attempted an unusual active scan of over 1000 port.
+Identifies and enumerates any adveraries that may try to scan services or machines on the network.
 
 <img width="705" height="525" alt="image" src="https://github.com/user-attachments/assets/0a1c4895-b1e7-4594-992e-20e7c50477d9" />
 <br>
-<img width="705" height="525" alt="image" src="https://github.com/user-attachments/assets/51e3e085-6b9f-4f71-b14e-86f2e78da995" />
+<img width="547" height="500" alt="image" src="https://github.com/user-attachments/assets/febf04aa-38b8-48a8-b775-1c72cfa4b54b" />
 <br>
 
 ### Associated Search: 
