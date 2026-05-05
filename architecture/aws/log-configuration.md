@@ -1,4 +1,4 @@
-## SQS-Based S3
+## Log Flow
 
 This method of retrieving logs involves Splunk being notified by an SNS Fanout -> SQS Queues. <br>
 This is followed by SQS queue messages notifying Splunk once new logs have been created. <br> If any messages are lost they are stored in a DLQ (Dead Letter Queue) <br>
