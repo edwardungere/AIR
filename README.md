@@ -21,7 +21,7 @@ Computing
 - EC2 Instance Connect Endpoint
 - IAM 
 - S3
-- Lambda 
+- Lambda (Python runtime)
 
 Networking
 - VPC 
